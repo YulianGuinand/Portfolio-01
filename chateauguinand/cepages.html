@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First - Try - Guinand - Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/logo2.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu();"></i>
+                <ul>
+                    <li><a href="index.html">MENU</a></li>
+                    <li><a href="vignobles.html">VIGNOBLES</a></li>
+                    <li><a href="cepages.html">CEPAGES</a></li>
+                    <li><a href="histoire.html">HISTOIRE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Nos Cépages</h1>
+    </section>
+<!----- Course------->
+
+<!-----campus----->
+<section class="campus">
+    <h1>Nos Cépages dans la Globalité</h1>
+    <p>Chateau Guinand propose plusieurs types de cépages; deux cépages blancs et trois cépages rouges</p>
+    <div class="row">
+        <div class="campus-col">
+            <img src="Images/London2.jpg" alt="london_img">
+            <div class="layer">
+                <h3>CHARDONNAY</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="Images/cotes_jura.png" alt="cepage_img">
+            <div class="layer">
+                <h3>SAVAGNIN</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="Images/washington2.jpg" alt="london_img">
+            <div class="layer">
+                <h3>POULSARD</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="Images/washingthon3.jpg" alt="london_img">
+            <div class="layer">
+                <h3>TROUSSEAU</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="Images/washington4.jpg" alt="london_img">
+            <div class="layer">
+                <h3>PINOT NOIR</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!------Footer-------->
+<section id="footer">
+    <h4>A PROPOS DE NOUS</h4>
+    <p>Le Domaine Château Guinand possède 5 hectares de vignes. Château Guinand est dirigé par Vincent Guinand, vous pouvez le contacter <a class="lien_contacte" href="contact.html">ici</a><br> Ou par l'adresse suivante : example@example.fr</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+    </div>
+</section>
+
+<!------JavaScript Toggle Menu------>
+<script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>
+<script src="https://kit.fontawesome.com/528169ce52.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

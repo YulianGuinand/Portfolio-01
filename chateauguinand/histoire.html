@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First - Try - Guinand - Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/logo2.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu();"></i>
+                <ul>
+                    <li><a href="index.html">MENU</a></li>
+                    <li><a href="vignobles.html">VIGNOBLES</a></li>
+                    <li><a href="cepages.html">CEPAGES</a></li>
+                    <li><a href="histoire.html">HISTOIRE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>L'Histoire du Château Guinand</h1>
+    </section>
+<!----- Blog ------->
+<section class="blog-content">
+
+    <div class="row">
+        <div class="blog-left">
+            <img src="Images/chateauguinand.png" alt="certificate_img">
+            <h2>Le château GUINAND a une longue histoire en lien avec le vignoble....</h2>
+            <p>On retrouve des traces de la maison vers 1500 qui à l'époque servait de vendangeoir, l'ensemble de la vallée (jusqu'à Baume-Les-Messieurs) étant planté en vignes. Il appartient à notre famille depuis 1678, comme en témoignent les portraits conservés dans le Château Guinand.</p>
+            <br>
+            <p>On trouve dans les ancêtres un Général d'Empire (dont le nom figure sous l'Arc de Triomphe), un homme de loi, un aumonier des abbesses de Chateau-Chalon, et une personnalité qui était Directeur des Salines de Salins et maire de Nevy-Sur-Seille sous le Premier Empire.</p>
+            <br>
+            <p>La configuration actuelle du Château date de 1820, date de son agrandissement.</p>
+            <br>
+            <p>Le vignoble comme tous les vignobles de France subit la grave crise du Phylloxera à la fin du 19ème siècle. A l'époque, le vin était du vin de consommation courante vendue localement en vrac notamment dans le Haut-Jura. Il était constitué de cépages aujourd'hui disparues et interdits (le gueuche, l'enfariné, le petit Béclan, le portuguais bleu, ...)</p>
+            <br>
+            <p>Pendant plus de 50 ans, le vignoble est laissé un peu à l'abandon. Le château vit de ses rentes qui s'amenuisent, et traversent l'histoire du 20ème siècle avec notamment la présence d'un poste émetteur et maquisard pendant la 2ème Guerre mondiale.</p>
+            <br>
+            <p>Le Vignoble du domaine a été reconstitué par Henri Guinand en 1953, qui après son service militaire et une formation à l'école d'agriculture de Ressin (dans la Loire), décide de replanter par greffages manuels de plants jurassiens sur porte-greffe. Le défonçage a été fait au treuil par un autre viticulteur du village (Joseph Vichot-Girod), et les premiers travaux d'entretien ont été executés par une jument nommée Flicka.</p>
+            <br>
+            <p>Le domaine s'est petit à petit agrandi pour constituer aujourd'hui 5 hectares dont 4 hectares autour du Château.</p>
+            <br>
+            <p>Il s'est également au fil du temps modernisé par des chemins d'accès, et un équipement performant tant à la cave (embouteilleuse, étiqueteuse, ...) que dans les vignes (chenillettes).</p>
+            <br>
+            <p>Le domaine a été transmis il y a quelques années sur Vincent, qui avec l'aide de ses parents, continue de perpétuer la tradition d'une maison où accueil et convivialité rythment les saisons, le travail de la vigne et le fruit des vendanges.</p>
+        
+        </div>
+        <div class="blog-right">
+            <h3>Les Années Importantes</h3>
+            <div>
+                <span>DEBUT DE L'HISTOIRE</span>
+                <span>Vers 1500</span>
+            </div>
+            <div>
+                <span>APPARTENANCE A NOTRE FAMILLE</span>
+                <span>Depuis 1678</span>
+            </div>
+            <div>
+                <span>CONFIGURATION ACTUELLE</span>
+                <span>Depuis 1820</span>
+            </div>
+            <div>
+                <span>CRISE DU PHYLLOXERA</span>
+                <span>Fin du 19ème siècle</span>
+            </div>
+            <div>
+                <span>RECONSTRUCTION PAR HENRI GUINAND</span>
+                <span>1953</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!------Footer-------->
+<section id="footer">
+    <h4>A PROPOS DE NOUS</h4>
+    <p>Le Domaine Château Guinand possède 5 hectares de vignes. Château Guinand est dirigé par Vincent Guinand, vous pouvez le contacter <a class="lien_contacte" href="contact.html">ici</a><br> Ou par l'adresse suivante : example@example.fr</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+    </div>
+</section>
+
+<!------JavaScript Toggle Menu------>
+<script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>
+<script src="https://kit.fontawesome.com/528169ce52.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
